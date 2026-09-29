@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ MEGA SITE - SuperAgent AI</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.umd.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/counterup2@2.0.2/dist/index.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mojs/core@1.2.0/dist/mo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+:root{--primary:#6c5ce7;--secondary:#00cec9;--accent:#fd79a8;--dark:#0a0a2e;--light:#dfe6e9;--gold:#fdcb6e}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:var(--dark);color:var(--light);overflow-x:hidden}
+#particles-js{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.navbar{background:rgba(10,10,46,0.95)!important;backdrop-filter:blur(10px);padding:1rem 2rem;z-index:1000}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;z-index:1}
+.hero h1{font-size:4rem;font-weight:900;background:linear-gradient(135deg,var(--primary),var(--secondary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .typed-cursor{color:var(--gold);font-size:3rem}
+.section{padding:6rem 2rem;position:relative;z-index:1}
+.card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;backdrop-filter:blur(10px);transition:all 0.4s ease;overflow:hidden}
+.card:hover{border-color:var(--secondary);box-shadow:0 0 30px rgba(0,206,201,0.3);transform:translateY(-10px)}
+.btn-glow{background:linear-gradient(135deg,var(--primary),var(--secondary));border:none;padding:12px 30px;border-radius:50px;color:white;font-weight:700;transition:all 0.3s ease;position:relative;overflow:hidden}
+.btn-glow:hover{box-shadow:0 0 20px rgba(108,92,231,0.6);transform:scale(1.05)}
+.feature-icon{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1rem;background:linear-gradient(135deg,var(--primary),var(--secondary))}
+.stat-number{font-size:3rem;font-weight:900;background:linear-gradient(135deg,var(--gold),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lib-badge{display:inline-block;padding:6px 16px;border-radius:50px;font-size:0.85rem;font-weight:600;margin:4px;border:1px solid;transition:all 0.3s}
+.lib-badge:hover{transform:scale(1.1)}
+.timeline{position:relative;padding-left:40px}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--primary),var(--secondary),var(--accent));border-radius:3px}
+.timeline-item{margin-bottom:2rem;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-40px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--secondary);box-shadow:0 0 10px var(--secondary)}
+footer{background:rgba(10,10,46,0.95);padding:2rem;text-align:center;position:relative;z-index:1}
+</style>
+</head>
+<body>
+<div id="particles-js"></div>
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">⚡ MEGA SITE</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Recursos</a></li>
+<li class="nav-item"><a class="nav-link" href="#stats">Estatísticas</a></li>
+<li class="nav-item"><a class="nav-link" href="#timeline">Linha do Tempo</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section id="hero" class="hero">
+<div class="container animate__animated animate__fadeInUp">
+<h1 class="mb-4">SuperAgent AI</h1>
+<p class="lead mb-4">O futuro da inteligência artificial está aqui</p>
+<span class="typed-cursor">|</span>
+<div class="mt-4">
+<a href="#features" class="btn btn-glow me-3">Explorar</a>
+<a href="#stats" class="btn btn-glow">Saiba Mais</a>
+</div>
+</div>
+</section>
+<section id="features" class="section">
+<div class="container">
+<h2 class="text-center mb-5 fw-bold" data-aos="fade-up">🚀 Recursos Incríveis</h2>
+<div class="row g-4">
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+<div class="card p-4 text-center h-100">
+<div class="feature-icon">⚡</div>
+<h5>Ultra Rápido</h5>
+<p class="text-muted">Processamento em tempo real com tecnologia de ponta</p>
+</div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+<div class="card p-4 text-center h-100">
+<div class="feature-icon">🧠</div>
+<h5>IA Inteligente</h5>
+<p class="text-muted">Algoritmos avançados que aprendem e evoluem</p>
+</div>
+</div>
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+<div class="card p-4 text-center h-100">
+<div class="feature-icon">🔮</div>
+<h5>Preditivo</h5>
+<p class="text-muted">Antecipe tendências com análise preditiva precisa</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="stats" class="section" style="background:rgba(255,255,255,0.02)">
+<div class="container">
+<h2 class="text-center mb-5 fw-bold" data-aos="fade-up">📊 Números que Falam</h2>
+<div class="row text-center g-4">
+<div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+<div class="stat-number">99.9%</div>
+<p>Uptime</p>
+</div>
+<div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+<div class="stat-number">1M+</div>
+<p>Usuários</p>
+</div>
+<div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+<div class="stat-number">50K+</div>
+<p>Projetos</p>
+</div>
+<div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+<div class="stat-number">24/7</div>
+<p>Suporte</p>
+</div>
+</div>
+</div>
+</section>
+<section id="timeline" class="section">
+<div class="container">
+<h2 class="text-center mb-5 fw-bold" data-aos="fade-up">📅 Nossa Jornada</h2>
+<div class="timeline">
+<div class="timeline-item" data-aos="fade-right"><h5>2024 - Lançamento</h5><p class="text-muted">SuperAgent AI nasce com missão de revolucionar a IA</p></div>
+<div class="timeline-item" data-aos="fade-right"><h5>2025 - Expansão</h5><p class="text-muted">Milhares de usuários e integrações poderosas</p></div>
+<div class="timeline-item" data-aos="fade-right"><h5>2026 - Futuro</h5><p class="text-muted">IA avançada acessível para todos no mundo</p></div>
+</div>
+</div>
+</section>
+<footer>
+<p class="mb-0">⚡ Mega Site - SuperAgent AI &copy; 2025 - Todos os direitos reservados</p>
+</footer>
+<script>
+particlesJS('particles-js',{particles:{number:{value:80,density:{enable:true,value_area:800}},color:{value:'#6c5ce7'},shape:{type:'circle'},opacity:{value:0.5,random:true},size:{value:3,random:true},line_linked:{enable:true,distance:150,color:'#00cec9',opacity:0.4,width:1},move:{enable:true,speed:2,direction:'none',random:true,speed:1,size:3,line_linked:true,straight:false,out_mode:'out'}},interactivity:{detect_on:'canvas',events:{onhover:{enable:true,mode:'grab'},onclick:{enable:true,mode:'push'},resize:true},modes:{grab:{distance:140,line_linked:{opacity:1}},push:{particles_nb:4}}},retina_detect:true});
+var typed=new Typed('.typed-cursor',{strings:['SuperAgent AI','Inteligência Artificial','Mega Site'],typeSpeed:60,backSpeed:40,loop:true,showCursor:true,cursorChar:'|'});
+ScrollReveal().init();
+document.addEventListener('DOMContentLoaded',function(){var statEls=document.querySelectorAll('.stat-number');statEls.forEach(function(el){var end=parseInt(el.textContent);CounterUp({start:0,end:end,duration:2000,delay:10})(el)})});
+</script>
+</body>
+</html>
